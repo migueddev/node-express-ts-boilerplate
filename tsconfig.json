@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Soporta características modernas de ES como async/await
+    "module": "CommonJS", // Compatible con Node.js
+    "rootDir": "src", // Carpeta raíz del código fuente
+    "outDir": "dist", // Carpeta de salida de los archivos transpilados
+    "moduleResolution": "Node", // Resolución de módulos compatible con Node.js
+    "strict": true, // Activa el modo estricto para mayor seguridad
+    "esModuleInterop": true, // Interoperabilidad con módulos CommonJS y ES6
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file casing
+    "skipLibCheck": true, // Omite la verificación de tipos en archivos .d.ts
+    "resolveJsonModule": true, // Permite importar archivos JSON
+    "emitDecoratorMetadata": true, // Necesario para frameworks como NestJS o TypeORM
+    "experimentalDecorators": true, // Habilita decoradores
+    "noImplicitAny": true, // Evita el uso de `any` implícito
+    "removeComments": true, // Elimina comentarios en los archivos transpilados
+    "noUnusedLocals": true, // Advierte sobre variables locales no usadas
+    "noUnusedParameters": true, // Advierte sobre parámetros no usados en funciones
+    "noImplicitReturns": true, // Garantiza que todas las funciones devuelvan algo explícitamente
+    "noFallthroughCasesInSwitch": true // Previene errores en declaraciones switch
+  },
+  "include": [
+    "src/**/*" // Incluye todo el código fuente
+  ],
+  "exclude": [
+    "node_modules", // Excluye la carpeta de dependencias
+    "dist", // Excluye los archivos generados
+    "**/*.test.ts", // Excluye pruebas, si no deseas compilarlas
+    "**/__tests__/**" // Excluye carpetas de pruebas específicas
+  ]
+}
