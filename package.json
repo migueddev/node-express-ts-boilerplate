@@ -2,7 +2,7 @@
   "name": "node-express-ts-boilerplate",
   "description": "Este es un Boilerplate para un proyecto Node usando Express, Typescript, ESLint, Prettier, Husky, Commitlint y Standard-Version",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "keywords": [
     "Boilerplate",
     "Node",
