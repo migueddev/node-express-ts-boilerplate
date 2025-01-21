@@ -22,7 +22,11 @@
     "dev": "ts-node-dev --respawn src/index.ts",
     "build": "tsc",
     "prettier": "prettier --write .",
-    "lint": "eslint \"*/**/*.{js,ts}\" --fix"
+    "lint": "eslint \"*/**/*.{js,ts}\" --fix",
+    "release": "standard-version",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
   },
   "dependencies": {
     "compression": "^1.7.5",
@@ -48,6 +52,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
+    "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.3",
